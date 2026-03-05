@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Kannada:wght@400;500;600;700&family=Noto+Sans+Tamil:wght@400;500;600;700&family=Noto+Sans+Telugu:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Noto+Sans+Malayalam:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 36 33% 97%;
+    --foreground: 20 10% 15%;
+
+    --card: 36 30% 99%;
+    --card-foreground: 20 10% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 10% 15%;
+
+    --primary: 24 80% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 36 20% 92%;
+    --secondary-foreground: 20 10% 25%;
+
+    --muted: 36 15% 93%;
+    --muted-foreground: 20 5% 50%;
+
+    --accent: 160 40% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 15% 88%;
+    --input: 30 15% 88%;
+    --ring: 24 80% 50%;
+
+    --radius: 0.625rem;
+
+    --sidebar-background: 36 25% 95%;
+    --sidebar-foreground: 20 10% 25%;
+    --sidebar-primary: 24 80% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 36 20% 90%;
+    --sidebar-accent-foreground: 20 10% 25%;
+    --sidebar-border: 30 15% 88%;
+    --sidebar-ring: 24 80% 50%;
+
+    /* Custom tokens */
+    --editor-bg: 0 0% 100%;
+    --toolbar-bg: 36 25% 96%;
+    --toolbar-border: 30 15% 88%;
+    --spell-error: 0 72% 51%;
+    --highlight-match: 48 95% 76%;
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+    --font-indic: 'Noto Sans Kannada', 'Noto Sans Devanagari', 'Noto Sans Tamil', 'Noto Sans Telugu', 'Noto Sans Malayalam', sans-serif;
+  }
+
+  .dark {
+    --background: 20 10% 10%;
+    --foreground: 36 20% 92%;
+    --card: 20 10% 13%;
+    --card-foreground: 36 20% 92%;
+    --popover: 20 10% 13%;
+    --popover-foreground: 36 20% 92%;
+    --primary: 24 80% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 20 10% 18%;
+    --secondary-foreground: 36 20% 92%;
+    --muted: 20 8% 20%;
+    --muted-foreground: 36 10% 60%;
+    --accent: 160 40% 40%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 20 8% 22%;
+    --input: 20 8% 22%;
+    --ring: 24 80% 55%;
+    --editor-bg: 20 10% 12%;
+    --toolbar-bg: 20 10% 15%;
+    --toolbar-border: 20 8% 22%;
+    --spell-error: 0 72% 55%;
+    --highlight-match: 48 80% 35%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+  h1, h2, h3 {
+    font-family: var(--font-display);
+  }
+}
+
+/* TipTap editor styles */
+.tiptap-editor .ProseMirror {
+  min-height: 500px;
+  padding: 2rem;
+  outline: none;
+  font-family: var(--font-indic);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: hsl(var(--foreground));
+}
+
+.tiptap-editor .ProseMirror p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  float: left;
+  color: hsl(var(--muted-foreground));
+  pointer-events: none;
+  height: 0;
+}
+
+.tiptap-editor .ProseMirror h1 { font-size: 2rem; font-weight: 700; margin: 1rem 0 0.5rem; }
+.tiptap-editor .ProseMirror h2 { font-size: 1.5rem; font-weight: 600; margin: 0.8rem 0 0.4rem; }
+.tiptap-editor .ProseMirror h3 { font-size: 1.25rem; font-weight: 600; margin: 0.6rem 0 0.3rem; }
+
+.tiptap-editor .ProseMirror ul { list-style: disc; padding-left: 1.5rem; }
+.tiptap-editor .ProseMirror ol { list-style: decimal; padding-left: 1.5rem; }
+
+.tiptap-editor .ProseMirror mark {
+  background-color: hsl(var(--highlight-match));
+  border-radius: 2px;
+  padding: 0 2px;
+}
+
+.spell-error {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: hsl(var(--spell-error));
+  cursor: pointer;
+}
+
+.find-highlight {
+  background-color: hsl(var(--highlight-match));
+  border-radius: 2px;
+}
