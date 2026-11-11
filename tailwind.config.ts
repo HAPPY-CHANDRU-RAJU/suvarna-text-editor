@@ -2,7 +2,7 @@ import type { Config } from "tailwindcss";
 
 export default {
   darkMode: ["class"],
-  content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
+  content: ["./index.html", "./src/**/*.{ts,tsx}"],
   prefix: "",
   theme: {
     container: {
@@ -16,7 +16,7 @@ export default {
       fontFamily: {
         display: ['Playfair Display', 'serif'],
         body: ['Inter', 'sans-serif'],
-        indic: ['Noto Sans Kannada', 'Noto Sans Devanagari', 'Noto Sans Tamil', 'Noto Sans Telugu', 'Noto Sans Malayalam', 'sans-serif'],
+        indic: ['Noto Sans Kannada', 'Nirmala UI', 'Tunga', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -62,11 +62,11 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        editor: "hsl(var(--editor-bg))",
-        toolbar: "hsl(var(--toolbar-bg))",
-        "toolbar-border": "hsl(var(--toolbar-border))",
-        "spell-error": "hsl(var(--spell-error))",
-        "highlight-match": "hsl(var(--highlight-match))",
+        brand: {
+          DEFAULT: "hsl(var(--brand))",
+          foreground: "hsl(var(--brand-foreground))",
+        },
+        canvas: "hsl(var(--canvas))",
       },
       borderRadius: {
         lg: "var(--radius)",

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Kannada:wght@400;500;600;700&family=Noto+Sans+Tamil:wght@400;500;600;700&family=Noto+Sans+Telugu:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Noto+Sans+Malayalam:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Kannada:wght@400;500;600;700&family=Noto+Serif+Kannada:wght@400;600;700&family=Baloo+Tamma+2:wght@400;600&family=Tiro+Kannada&family=Anek+Kannada:wght@400;600&family=Hubballi&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,80 +7,80 @@
 @layer base {
   :root {
     --background: 36 33% 97%;
-    --foreground: 20 10% 15%;
-
-    --card: 36 30% 99%;
-    --card-foreground: 20 10% 15%;
-
+    --foreground: 20 14% 14%;
+    --card: 0 0% 100%;
+    --card-foreground: 20 14% 14%;
     --popover: 0 0% 100%;
-    --popover-foreground: 20 10% 15%;
-
-    --primary: 24 80% 50%;
+    --popover-foreground: 20 14% 14%;
+    /* Suvarna gold */
+    --primary: 35 82% 36%;
     --primary-foreground: 0 0% 100%;
-
     --secondary: 36 20% 92%;
     --secondary-foreground: 20 10% 25%;
-
-    --muted: 36 15% 93%;
-    --muted-foreground: 20 5% 50%;
-
-    --accent: 160 40% 45%;
+    --muted: 36 18% 93%;
+    --muted-foreground: 25 6% 42%;
+    --accent: 35 82% 40%;
     --accent-foreground: 0 0% 100%;
-
-    --destructive: 0 72% 51%;
+    --destructive: 0 72% 48%;
     --destructive-foreground: 0 0% 100%;
+    --border: 30 14% 86%;
+    --input: 30 14% 82%;
+    --ring: 35 82% 40%;
+    --radius: 0.5rem;
 
-    --border: 30 15% 88%;
-    --input: 30 15% 88%;
-    --ring: 24 80% 50%;
-
-    --radius: 0.625rem;
-
-    --sidebar-background: 36 25% 95%;
+    --sidebar-background: 36 28% 95%;
     --sidebar-foreground: 20 10% 25%;
-    --sidebar-primary: 24 80% 50%;
+    --sidebar-primary: 35 82% 36%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 36 20% 90%;
     --sidebar-accent-foreground: 20 10% 25%;
-    --sidebar-border: 30 15% 88%;
-    --sidebar-ring: 24 80% 50%;
+    --sidebar-border: 30 14% 86%;
+    --sidebar-ring: 35 82% 40%;
 
-    /* Custom tokens */
-    --editor-bg: 0 0% 100%;
-    --toolbar-bg: 36 25% 96%;
-    --toolbar-border: 30 15% 88%;
-    --spell-error: 0 72% 51%;
-    --highlight-match: 48 95% 76%;
+    /* Title bar: deep bronze */
+    --brand: 26 52% 23%;
+    --brand-foreground: 40 60% 96%;
+    --ribbon: 36 30% 98%;
+    --canvas: 30 10% 89%;
+    --spell-error: 0 78% 50%;
+    --grammar-error: 217 85% 50%;
+    --search-match: 48 96% 70%;
+    --search-current: 28 96% 58%;
+
     --font-display: 'Playfair Display', serif;
-    --font-body: 'Inter', sans-serif;
-    --font-indic: 'Noto Sans Kannada', 'Noto Sans Devanagari', 'Noto Sans Tamil', 'Noto Sans Telugu', 'Noto Sans Malayalam', sans-serif;
+    --font-body: 'Inter', 'Noto Sans Kannada', sans-serif;
+    --font-indic: 'Noto Sans Kannada', 'Nirmala UI', 'Tunga', sans-serif;
   }
 
   .dark {
-    --background: 20 10% 10%;
+    --background: 24 10% 9%;
     --foreground: 36 20% 92%;
-    --card: 20 10% 13%;
+    --card: 24 9% 12%;
     --card-foreground: 36 20% 92%;
-    --popover: 20 10% 13%;
+    --popover: 24 9% 13%;
     --popover-foreground: 36 20% 92%;
-    --primary: 24 80% 55%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 20 10% 18%;
+    --primary: 38 80% 55%;
+    --primary-foreground: 24 30% 8%;
+    --secondary: 24 8% 18%;
     --secondary-foreground: 36 20% 92%;
-    --muted: 20 8% 20%;
-    --muted-foreground: 36 10% 60%;
-    --accent: 160 40% 40%;
-    --accent-foreground: 0 0% 100%;
-    --destructive: 0 62% 30%;
+    --muted: 24 7% 18%;
+    --muted-foreground: 36 10% 64%;
+    --accent: 38 80% 55%;
+    --accent-foreground: 24 30% 8%;
+    --destructive: 0 65% 52%;
     --destructive-foreground: 0 0% 100%;
-    --border: 20 8% 22%;
-    --input: 20 8% 22%;
-    --ring: 24 80% 55%;
-    --editor-bg: 20 10% 12%;
-    --toolbar-bg: 20 10% 15%;
-    --toolbar-border: 20 8% 22%;
-    --spell-error: 0 72% 55%;
-    --highlight-match: 48 80% 35%;
+    --border: 24 7% 22%;
+    --input: 24 7% 26%;
+    --ring: 38 80% 55%;
+    --sidebar-background: 24 9% 11%;
+    --sidebar-foreground: 36 20% 88%;
+    --sidebar-accent: 24 7% 18%;
+    --sidebar-accent-foreground: 36 20% 92%;
+    --sidebar-border: 24 7% 22%;
+    --brand: 26 35% 15%;
+    --brand-foreground: 40 60% 94%;
+    --ribbon: 24 9% 13%;
+    --canvas: 24 8% 16%;
   }
 }
 
@@ -88,55 +88,335 @@
   * {
     @apply border-border;
   }
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
     font-family: var(--font-body);
   }
-  h1, h2, h3 {
-    font-family: var(--font-display);
+}
+
+@layer components {
+  /* ---------- Editor shell ---------- */
+  .editor-shell {
+    @apply flex h-screen flex-col overflow-hidden bg-background;
+  }
+  .editor-main {
+    @apply flex min-h-0 flex-1;
+  }
+
+  .title-bar {
+    @apply flex h-11 shrink-0 items-center gap-2 px-2;
+    background: hsl(var(--brand));
+    color: hsl(var(--brand-foreground));
+  }
+  .title-bar-logo {
+    @apply flex h-8 w-8 shrink-0 items-center justify-center rounded-md font-bold;
+    font-family: var(--font-indic);
+    background: hsl(var(--primary));
+    color: #fff;
+  }
+  .title-bar-btn {
+    @apply flex h-8 w-8 items-center justify-center rounded opacity-90 transition-colors hover:bg-white/15 disabled:opacity-40;
+  }
+  .title-bar-input {
+    @apply min-w-0 rounded bg-transparent px-2 py-1 text-center text-sm outline-none transition-colors placeholder:text-white/60 hover:bg-white/10 focus:bg-white/15;
+    font-family: var(--font-indic);
+  }
+
+  /* ---------- Ribbon ---------- */
+  .ribbon {
+    @apply relative z-20 shrink-0 border-b border-border;
+    background: hsl(var(--ribbon));
+  }
+  .ribbon-tabs {
+    @apply flex items-end gap-0.5 overflow-x-auto px-2 pt-1;
+  }
+  .ribbon-tab {
+    @apply relative whitespace-nowrap rounded-t px-3 pb-1.5 pt-1 text-[13px] text-foreground/80 transition-colors hover:bg-muted hover:text-foreground;
+  }
+  .ribbon-tab.is-active {
+    @apply font-semibold text-primary;
+  }
+  .ribbon-tab.is-active::after {
+    content: '';
+    @apply absolute bottom-0 left-2 right-2 h-[3px] rounded-full bg-primary;
+  }
+  .ribbon-tab-file {
+    @apply mr-1 bg-primary/10 font-semibold text-primary hover:bg-primary/20;
+  }
+  .ribbon-tab-contextual {
+    @apply text-emerald-700 dark:text-emerald-400;
+  }
+  .ribbon-body {
+    @apply flex h-[96px] items-stretch overflow-x-auto overflow-y-hidden px-1 py-1;
+  }
+  .ribbon-body-floating {
+    @apply absolute left-0 right-0 top-full border-b border-border shadow-lg;
+    background: hsl(var(--ribbon));
+  }
+  .ribbon-group {
+    @apply flex shrink-0 flex-col border-r border-border/80 px-1 last:border-r-0;
+  }
+  .ribbon-group-label {
+    @apply mt-auto whitespace-nowrap pb-0.5 pt-1 text-center text-[11px] text-muted-foreground;
+  }
+  .ribbon-btn {
+    @apply inline-flex h-7 min-w-7 items-center justify-center gap-1 rounded px-1.5 text-foreground/85 transition-colors hover:bg-muted hover:text-foreground disabled:pointer-events-none disabled:opacity-40;
+  }
+  .ribbon-btn.is-active {
+    @apply bg-primary/15 text-primary ring-1 ring-inset ring-primary/40;
+  }
+  .ribbon-btn-large {
+    @apply flex h-full min-w-[56px] max-w-[84px] flex-col items-center justify-start gap-1 rounded px-1.5 pt-1.5 text-foreground/85 transition-colors hover:bg-muted hover:text-foreground disabled:pointer-events-none disabled:opacity-40;
+  }
+  .ribbon-btn-large.is-active {
+    @apply bg-primary/15 text-primary ring-1 ring-inset ring-primary/40;
+  }
+  .ribbon-btn-large-label {
+    @apply line-clamp-2 text-center text-[11px] leading-tight;
+  }
+  .ribbon-input {
+    @apply inline-flex h-7 items-center rounded border border-input bg-background px-2 text-xs outline-none hover:border-primary/60 focus:border-primary;
+  }
+  .style-tile {
+    @apply w-[76px] shrink-0 rounded border border-border bg-background px-2 py-1 text-left transition-colors hover:border-primary/60;
+  }
+  .style-tile.is-active {
+    @apply border-primary bg-primary/10;
+  }
+  .menu-item {
+    @apply flex w-full items-center gap-2 rounded px-2 py-1.5 text-sm transition-colors hover:bg-muted;
+  }
+  .menu-sep {
+    @apply my-1 h-px bg-border;
+  }
+  .chip {
+    @apply inline-flex items-center rounded-full border border-border bg-background px-2.5 py-0.5 text-sm transition-colors hover:border-primary hover:bg-primary/10;
+  }
+
+  /* ---------- Backstage (File) ---------- */
+  .backstage {
+    @apply fixed inset-0 z-50 flex bg-background;
+  }
+  .backstage-nav {
+    @apply flex w-56 shrink-0 flex-col gap-0.5 p-2 pt-3;
+    background: hsl(var(--brand));
+    color: hsl(var(--brand-foreground));
+  }
+  .backstage-back {
+    @apply mb-3 flex h-10 w-10 items-center justify-center rounded-full hover:bg-white/15;
+  }
+  .backstage-item {
+    @apply flex items-center gap-3 rounded px-3 py-2.5 text-left text-sm transition-colors hover:bg-white/10;
+  }
+  .backstage-item.is-active {
+    @apply bg-white/20 font-semibold;
+  }
+  .backstage-main {
+    @apply flex-1 overflow-auto p-10;
+  }
+  .template-card {
+    @apply flex flex-col items-center gap-2 text-sm;
+  }
+  .template-thumb {
+    @apply relative aspect-[1/1.3] w-full overflow-hidden rounded-md border border-border bg-white shadow-sm transition-all;
+  }
+  .template-card:hover .template-thumb {
+    @apply border-primary shadow-md;
+  }
+  .template-thumb-lines {
+    background-image: repeating-linear-gradient(to bottom, transparent 0 14px, #e7e2da 14px 16px);
+    background-size: 70% 100%;
+    background-position: center 46px;
+    background-repeat: no-repeat;
+  }
+  .template-thumb-title {
+    @apply absolute inset-x-2 top-4 truncate text-center text-xs font-semibold text-neutral-700;
+  }
+
+  /* ---------- Canvas & pages ---------- */
+  .canvas-scroll {
+    @apply relative flex-1 overflow-auto;
+    background: hsl(var(--canvas));
+  }
+  .page-sizer {
+    @apply relative mx-auto my-6;
+  }
+  .page-stack {
+    @apply absolute left-0 top-0;
+    transform-origin: top left;
+  }
+  .page-sheets {
+    @apply absolute inset-0;
+  }
+  .page-sheet {
+    @apply absolute left-0 right-0 bg-white;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 0.06), 0 2px 6px rgb(0 0 0 / 0.14);
+  }
+  .sheet-chrome {
+    @apply pointer-events-none absolute flex gap-2 whitespace-nowrap text-[9pt] text-neutral-500;
+    font-family: var(--font-indic);
+  }
+  .page-content {
+    @apply relative;
+  }
+  .page-content .ProseMirror {
+    padding: var(--page-mt) var(--page-mr) 0 var(--page-ml);
+    min-height: var(--stack-h);
+  }
+  .web-layout {
+    @apply mx-auto my-6 max-w-[900px] bg-white shadow-md;
+  }
+  .web-layout .ProseMirror {
+    @apply min-h-[70vh] px-12 py-10;
+  }
+  .shared-page {
+    @apply mx-auto my-8 max-w-[820px] bg-white px-6 py-10 shadow-md sm:px-16 sm:py-16;
+  }
+
+  /* ---------- Ruler ---------- */
+  .ruler-wrap {
+    @apply sticky top-0 z-10 flex border-b border-border pb-0.5 pt-1;
+    /* Matches the page's auto margins: centred, but start-aligned when the page overflows. */
+    justify-content: safe center;
+    width: max-content;
+    min-width: 100%;
+    background: hsl(var(--canvas));
+  }
+  .ruler {
+    @apply relative h-5 rounded-sm bg-white;
+  }
+  .ruler-margin {
+    @apply absolute top-0 h-full bg-neutral-200;
+  }
+  .ruler-tick {
+    @apply absolute bottom-0 w-px bg-neutral-400;
+  }
+  .ruler-label {
+    @apply absolute top-0.5 -translate-x-1/2 text-[9px] leading-none text-neutral-500;
+  }
+  .ruler-indent {
+    @apply absolute bottom-0 h-0 w-0 -translate-x-1/2;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 6px solid hsl(var(--primary));
+  }
+
+  /* ---------- Side panes ---------- */
+  .side-pane {
+    @apply flex w-[300px] shrink-0 flex-col border-l border-border bg-card;
+  }
+  .side-pane-left {
+    @apply border-l-0 border-r;
+  }
+  .side-pane-header {
+    @apply flex h-10 items-center justify-between border-b border-border px-3 text-sm font-semibold;
+  }
+  .nav-item {
+    @apply flex w-full items-center rounded px-2 py-1.5 text-left text-sm transition-colors hover:bg-muted;
+  }
+  .nav-item.is-active {
+    @apply bg-primary/10 font-medium text-primary;
+  }
+  .comment-card {
+    @apply cursor-pointer rounded-lg border border-border bg-background p-2.5 transition-shadow hover:shadow-sm;
+  }
+  .comment-card.is-active {
+    @apply border-primary shadow-sm ring-1 ring-primary/40;
+  }
+
+  /* ---------- Status bar ---------- */
+  .status-bar {
+    @apply flex h-7 shrink-0 items-center gap-3 overflow-hidden whitespace-nowrap px-3 text-[11px];
+    background: hsl(var(--brand));
+    color: hsl(var(--brand-foreground));
+  }
+  .status-btn {
+    @apply flex h-6 items-center gap-1 rounded px-1.5 transition-colors hover:bg-white/15;
+  }
+  .status-bar [role='slider'] {
+    @apply h-3 w-3 border-white bg-white;
+  }
+  .focus-exit {
+    @apply fixed bottom-3 right-3 z-30 rounded-full bg-black/70 px-3 py-1.5 text-xs text-white opacity-40 transition-opacity hover:opacity-100;
+  }
+
+  /* ---------- Context menu & keyboard ---------- */
+  .context-menu {
+    @apply fixed z-[60] min-w-[220px] max-w-[300px] rounded-lg border border-border bg-popover p-1 text-popover-foreground shadow-xl;
+  }
+  .kannada-keyboard {
+    @apply absolute bottom-3 left-1/2 z-20 w-[min(680px,calc(100%-24px))] -translate-x-1/2 rounded-xl border border-border bg-card p-3 shadow-2xl;
+  }
+  .kb-key {
+    @apply flex h-9 min-w-9 items-center justify-center rounded-md border border-border bg-background px-2 text-base shadow-sm transition-colors hover:border-primary hover:bg-primary/10 active:translate-y-px;
   }
 }
 
-/* TipTap editor styles */
-.tiptap-editor .ProseMirror {
-  min-height: 500px;
-  padding: 2rem;
-  outline: none;
-  font-family: var(--font-indic);
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: hsl(var(--foreground));
-}
-
-.tiptap-editor .ProseMirror p.is-editor-empty:first-child::before {
+/* ---------- Document typography ----------
+   Base rules live in DOCUMENT_CSS (src/lib/export/print.ts) so the editor,
+   print output and HTML export match; they are injected in main.tsx.
+   Below are editor-only additions. */
+.suvarna-doc { outline: none; caret-color: #111; word-wrap: break-word; }
+.suvarna-doc [data-resize-container] { margin: 0 auto 6pt; }
+.suvarna-doc .tableWrapper { margin: 0 0 8pt; overflow-x: auto; }
+.suvarna-doc .tableWrapper table { margin: 0; }
+.suvarna-doc td, .suvarna-doc th { position: relative; min-width: 1em; }
+.suvarna-doc .selectedCell::after { content: ''; position: absolute; inset: 0; background: rgb(200 162 74 / 0.25); pointer-events: none; }
+.suvarna-doc .column-resize-handle { position: absolute; right: -2px; top: 0; bottom: 0; width: 4px; background: hsl(var(--primary)); pointer-events: none; }
+.suvarna-doc.resize-cursor { cursor: col-resize; }
+.suvarna-doc .ProseMirror-selectednode { outline: 2px solid hsl(var(--primary)); }
+.suvarna-doc p.is-editor-empty:first-child::before {
   content: attr(data-placeholder);
   float: left;
-  color: hsl(var(--muted-foreground));
-  pointer-events: none;
   height: 0;
+  color: #9ca3af;
+  pointer-events: none;
 }
 
-.tiptap-editor .ProseMirror h1 { font-size: 2rem; font-weight: 700; margin: 1rem 0 0.5rem; }
-.tiptap-editor .ProseMirror h2 { font-size: 1.5rem; font-weight: 600; margin: 0.8rem 0 0.4rem; }
-.tiptap-editor .ProseMirror h3 { font-size: 1.25rem; font-weight: 600; margin: 0.6rem 0 0.3rem; }
+/* Page break: invisible in the flow, labelled while editing. */
+.suvarna-doc .page-break { position: relative; height: 0; }
+.ProseMirror .page-break::after {
+  content: '— ಪುಟ ವಿರಾಮ · Page Break —';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -8px;
+  text-align: center;
+  font: 10px var(--font-body);
+  color: #9ca3af;
+  border-top: 1px dashed #d1d5db;
+  line-height: 14px;
+  pointer-events: none;
+}
+.ProseMirror .page-break.ProseMirror-selectednode::after { color: hsl(var(--primary)); border-color: hsl(var(--primary)); }
 
-.tiptap-editor .ProseMirror ul { list-style: disc; padding-left: 1.5rem; }
-.tiptap-editor .ProseMirror ol { list-style: decimal; padding-left: 1.5rem; }
+.pm-page-spacer { user-select: none; pointer-events: none; }
 
-.tiptap-editor .ProseMirror mark {
-  background-color: hsl(var(--highlight-match));
-  border-radius: 2px;
-  padding: 0 2px;
+/* Proofing underlines */
+.proof-spelling {
+  text-decoration: underline wavy hsl(var(--spell-error));
+  text-decoration-skip-ink: none;
+  text-underline-offset: 3px;
+}
+.proof-grammar,
+.proof-style {
+  text-decoration: underline double hsl(var(--grammar-error));
+  text-decoration-skip-ink: none;
+  text-underline-offset: 3px;
 }
 
-.spell-error {
-  text-decoration-line: underline;
-  text-decoration-style: wavy;
-  text-decoration-color: hsl(var(--spell-error));
-  cursor: pointer;
-}
+.search-match { background: hsl(var(--search-match)); border-radius: 2px; }
+.search-match.current { background: hsl(var(--search-current)); }
 
-.find-highlight {
-  background-color: hsl(var(--highlight-match));
-  border-radius: 2px;
-}
+.comment-mark { background: rgb(253 230 138 / 0.55); border-bottom: 2px solid #f59e0b; }
+.comment-mark[data-comment-id='pending'] { background: rgb(253 186 116 / 0.6); }
+
+.format-painter-cursor { cursor: copy; }
+
+/* Keep the page white in dark mode, like Word. */
+.dark .page-sheet, .dark .web-layout, .dark .shared-page, .dark .ruler { background: #fff; }
